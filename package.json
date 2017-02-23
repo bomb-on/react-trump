@@ -1,9 +1,11 @@
 {
   "name": "react-trump",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple answers to any possible question.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir lib",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,5 +21,13 @@
   },
   "bugs": {
     "url": "https://github.com/bomb-on/react-trump/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-preset-es2015": "^6.22.0"
+  },
+  "babel": {
+    "presets": ["es2015"]
   }
 }

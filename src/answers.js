@@ -1,4 +1,7 @@
-var allAnswers = [
+'use strict';
+
+// list of all possible answers in no particular order
+const allAnswers = [
   'huge',
   'the hugest',
   'great',
@@ -15,6 +18,8 @@ var allAnswers = [
   'afghanistan',
   'syria',
   'america',
+  'north korea',
+  'ukraine',
   'texas',
   'wall',
   'fake news',
@@ -35,6 +40,7 @@ var allAnswers = [
   'betsy',
   'mexicans',
   'muslims',
+  'isis',
   'christians',
   'immigrants',
   'refugees',
@@ -49,7 +55,28 @@ var allAnswers = [
   'stupid',
   'incompetent',
   'nuclear',
-  'climate'
+  'climate change',
+  'oil',
+  'heterosexual',
+  'homosexual',
+  'pedophile',
+  'aliens',
+  'women',
+  'melania',
+  'ivanka',
+  'taxes',
+  'fbi',
+  'cia',
+  'nsa',
+  'kkk',
+  'president',
+  'rigged',
+  'law',
+  'order',
+  'republican',
+  'democrat',
+  'victory',
+  'taco'
 ];
 
 module.exports = allAnswers;
