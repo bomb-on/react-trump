@@ -1,0 +1,23 @@
+{
+  "name": "react-trump",
+  "version": "0.0.1",
+  "description": "Simple answers to any possible question.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "trump"
+  ],
+  "author": "bomb-on <spemovka@gmail.com>",
+  "license": "WTFPL",
+  "homepage": "https://github.com/bomb-on/react-trump#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bomb-on/react-trump.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bomb-on/react-trump/issues"
+  }
+}
