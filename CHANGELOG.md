@@ -1,3 +1,8 @@
+### 0.1.1 (2017-02-27)
+
+- Improved answering functionality, mostly related to punctuation marks
+- Added tests
+
 ### 0.1.0 (2017-02-23)
 
 - Switched to ES6
