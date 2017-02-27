@@ -1,14 +1,20 @@
 react-trump
 ===========
 
-> An `npm` module which might help you with getting a proper answer to almost any question you have. In all caps.  
+> An `npm` module which might help you with getting a proper answer to almost any question you have. In all caps. Now 
+turned into  Twitter bot :robot: to help to the rest of the world, not only nerds!  
 > [changelog](CHANGELOG.md)
 
-## Installation
+## Twitter Bot Usage
+
+Just tweet to [@say_trump](https://twitter.com/say_trump) (including the handle) to get an answer. Answers are in 
+all-caps and can include as many exclamation points as question had question marks ;)
+
+## npm Module Installation
 
 `npm install react-trump`
 
-## Usage
+## npm Module Usage
 
 Asking for an answer without any parameters will result in all-caps string.
 ```javascript

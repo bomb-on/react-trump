@@ -1,7 +1,7 @@
 {
   "name": "react-trump",
   "version": "0.1.1",
-  "description": "Simple answers to any possible question.",
+  "description": "Trump-style answering machine",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --presets babel-preset-es2015 --out-dir lib",
@@ -22,6 +22,9 @@
   "bugs": {
     "url": "https://github.com/bomb-on/react-trump/issues"
   },
+  "dependencies": {
+    "twitter": "^1.7.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
@@ -33,6 +36,9 @@
   "babel": {
     "presets": [
       "es2015"
+    ],
+    "ignore": [
+      "test.js"
     ]
   }
 }

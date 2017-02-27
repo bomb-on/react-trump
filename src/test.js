@@ -1,3 +1,5 @@
+'use strict';
+
 const trump = require('./index');
 const answers = require('./answers');
 

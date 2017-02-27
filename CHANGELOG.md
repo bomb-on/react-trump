@@ -1,3 +1,8 @@
+### 0.2.0 (2017-02-27)
+
+- Turned this piece of crap into Twitter bot
+- Updated documentation and description
+
 ### 0.1.1 (2017-02-27)
 
 - Improved answering functionality, mostly related to punctuation marks
