@@ -1,3 +1,7 @@
+### 0.2.1 (2017-03-01)
+
+- Added simple server and logger
+
 ### 0.2.0 (2017-02-27)
 
 - Turned this piece of crap into Twitter bot

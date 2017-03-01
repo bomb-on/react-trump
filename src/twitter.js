@@ -2,6 +2,7 @@
 
 import Twitter from 'twitter'
 import trump from './index'
+import logger from './logger'
 
 const client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -10,19 +11,21 @@ const client = new Twitter({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
-client.stream('statuses/filter', {track: '@say_trump'}, stream => {
-  stream.on('data', (tweet) => {
-    console.log(`[${new Date()}] @${tweet.user.screen_name} asked...`);
-    postReply({ tweet });
-  });
+const start = (callback) => {
+  client.stream('statuses/filter', {track: '@say_trump'}, stream => {
+    stream.on('data', (tweet) => {
+      logger.log(`@${tweet.user.screen_name} just asked something!`);
+      postReply({ tweet });
+    });
 
-  stream.on('error', (error) => {
-    console.log(`[${new Date()}] *** STREAM ERROR :( ***'`);
-    console.log(error);
-    throw error;
-  });
-});
+    stream.on('error', (error) => {
+      logger.log(`*** STREAM ERROR :( ***'`, error);
+      callback(error);
+    });
 
+    callback(undefined);
+  });
+};
 
 const postReply = ({ tweet }) => {
   const question = tweet.text;
@@ -34,13 +37,12 @@ const postReply = ({ tweet }) => {
     {status, in_reply_to_status_id: tweet.id_str},
     (error, tweet, response) => {
       if(error) {
-        console.log(`[${new Date()}] *** ANSWERING ERROR :( ***'`);
-        console.log(error);
+        logger.log(` *** ANSWERING ERROR :( ***'`, error);
         throw error;
       }
-      console.log(`[${new Date()}] Replied to ${userMention}.`);
+      logger.log(`Successfully replied to ${userMention}!`);
     }
   );
 };
 
-module.exports = { client };
+module.exports = { start };

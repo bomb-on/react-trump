@@ -43,6 +43,22 @@ var answer = trump.answer({ question, exclamationPoints, includeQuestion });
 // AMERICA!!!
 ```
 
+If the answer has more than one question mark, the answer will include the same amount of exclamation points:
+
+```javascript
+var trump = require('react-trump');
+
+var question = 'Howdy??????';  // omitting the question mark will add it anyways
+var exclamationPoints = 3;  // this will be overridden
+var includeQuestion = true;  // if you want to include the question in response
+
+var answer = trump.answer({ question, exclamationPoints, includeQuestion });
+
+// the `answer` will have the same amount of exclamation points as the question had question marks
+// Howdy??????
+// MEXICO!!!!!!
+```
+
 ## Contributing
 
 All contributions are more than welcome although I might be very picky about adding additional answers to the list ;)
