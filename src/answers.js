@@ -76,7 +76,8 @@ const allAnswers = [
   'republican',
   'democrat',
   'victory',
-  'taco'
+  'taco',
+  'covfefe',
 ];
 
 module.exports = allAnswers;

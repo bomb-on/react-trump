@@ -25,7 +25,7 @@ const answer = function ({ question, exclamationPoints=0, includeQuestion }) {
   } else {
     if (typeof question === 'string' || question instanceof String) {
       if (!question.endsWith('?')) {
-        question = question + '?';
+        question += '?';
       }
       return question + '\n' + constructAnswer(arguments);
     } else {

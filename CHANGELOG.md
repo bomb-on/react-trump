@@ -1,3 +1,9 @@
+### 0.3.0 (2017-07-17)
+
+- Running with `pm2`
+- covfefe
+
+
 ### 0.2.1 (2017-03-01)
 
 - Added simple server and logger
